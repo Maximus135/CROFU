@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background: transparent;
+    width: 100%;
+    padding: 10px 0,5% 10px 0,5%;
+    position: fixed;
+    float: left;
+}
+
+header #logotipe {
+    color: white;
+    cursor: pointer;
+}
+
+header #logotipe span {
+    font-size: 45pt;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#top {
+    padding-top: 20%;
+}
+
+#top h3 {
+    color: indianred;
+}
+
+#about {
+    text-align: right;
+    font-size: 15pt;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+#about > a {
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#about > a:hover{
+    color: indianred;
+}
+
+@media (min-width: 671px) {
+    #logotipe {
+        float: left;
+        width: 30%;
+    }
+
+    #logotipe span {
+        margin-left: 40px;
+    }
+
+    #about {
+        margin-top: 15px;
+        float: right;
+        width: 70%;
+        font-size: 13pt;
+        line-height: 35px;
+    }
+
+}
+
+@media (max-width: 670px) {
+    #logotipe{
+        text-align: center;
+        margin-top: 5px;
+        width: 100%;
+    }
+    
+    #logotipe span {
+        font-size:30pt!important;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #about {
+        float: center;
+        text-align: center;
+        width: 100%;
+        font-size: 13pt;
+    }
+
+    #about > a {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    #top {
+        height:50%!important;
+        padding-top: 70%!important;   
+    }
+
+    #top h1 {
+        font-size: 40pt;
+    }
+
+    #top h3 {
+        font-size: 25pt;
+    }
+
+    #myprofile {
+        padding-top: 25%!important;
+    }
+
+    
+    
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+header.fixed #logotipe{
+    color: black;
+}
+
+.fixed #about a {
+    color: black;
+}
+
+.fixed #about a:hover {
+    color: indianred;
+}
+
+.fixed2 {
+    color: indianred;
+}
+
+#top {
+    width:100%;
+    height: 70%;
+    background-image: url(/media/music.png);
+    background-blend-mode: multiply;
+    background-color: #4a4a4e;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 45pt;
+}
+
+#main{
+    padding: 100px 20%;
+    float: left;
+    width: 60%;
+    background-color: white;
+    color: black;
+}
+
+#overview {
+    float: center;
+    background-image: url("/media/studio.png");
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: #d89a9a;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    height: 1000px;
+}
+
+#overview .img {
+    float: left;
+    width: 20%;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top:100px;
+}
+
+
+#overview img {
+    background-color: #fafafa;
+    padding: 10px;
+    border: 2px solid black;
+    float: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+#overview span {
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+@media (max-width: 700px){
+    #overview {
+        height:1750px!important;
+    }
+
+    #overview .img {
+        width: 80%;
+        margin-right: 10%!important;
+        margin-left: 10%!important;
+    }
+}
+
+#register {
+    font-size: 20pt;
+}
+
+#register input{
+    line-height: 30px;
+}
+
+#login {
+    font-size: 20pt;
+}
+#login input {
+    line-height: 30px;
+}
+
+#myprofile {
+    padding-top: 5%;
+    width: 100%;
+    height: 80%;
+    background-image: url(/media/music.png);
+    background-blend-mode: multiply;
+    background-color: #4a4a4e;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 45pt;
+}
+
+#myprofile #avatar {
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+    float: center;
+}
+
+#myprofile input {
+    height: 5%;
+    width: 280px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+}
+
+#myprofile #tok_quan {
+    margin-top: 1%;
+    color: rgb(205, 92, 92);
+}
+
+#myprofile input:focus {
+    background-color: white;
+    color: black;
+}
+
+#myprofile button {
+    margin: 0 2% 0 2%;
+    height: 6%;
+    width: 280px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 50%;
+    float: center;
+    
+}
+#myprofile  button:hover{
+    background-color: white;
+    color: black;
+}
+
+#myprofile #save{
+    float: right;
+}
+#myprofile #upload{
+    float: left;
+}
+
+#myprofilemusic {
+    border-top: 5px dotted rgb(205, 92, 92);
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    font-size:15pt;
+    padding: 1%;
+    overflow: auto;
+
+}
+
+#myprofilemusic audio {
+    margin: 1% 0 1% 0;
+    width: 80%;
+    height: 15%;
+}
+
+#myprofilemusic span {
+    float: left;
+    width: 10%;
+    font-size: 11pt;
+    color: black;
+}
+
+
+
+
+
